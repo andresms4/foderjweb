@@ -9,7 +9,7 @@ import BgItems from "../components/BgItems";
 import SocialIcons from "../components/SocialIcons";
 
 export default function Home() {
-  const boxRef = useRef();
+  const boxRef = useRef() as React.MutableRefObject<HTMLInputElement>;
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
